@@ -10,13 +10,16 @@
     <h1>Howdy</h1>
     <h3>Rollbar Button</h3>
     <button id="rollbar btn">Rollbar</button>
-    <p>This button sends an error to Rollbar</p>
+    <p></p>
 
     <script>
         const rollBtn = document.querySelector('button')
 
         function rollSend(roll){
-            rollbar.debug('You hit the button')
+            roll.preventDefault()
+            const newRoll = document.createElement('p')
+            newRoll.innerText = "Rollbar is cool"
+            document.body.appendChild(newRoll)
         }
 
         rollBtn.addEventListener('click', rollSend)

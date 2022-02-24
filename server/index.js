@@ -21,7 +21,7 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 rollbar.critical('This is a test of a critical error')
-rollbarasdasda.warning('This is a test of a rollbar warning')
+rollbar.warning('This is a test of a rollbar warning')
 
 const port = process.env.PORT || 4555;
 

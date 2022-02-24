@@ -1,4 +1,3 @@
-const exp = require('constants');
 const express = require('express');
 const path = require('path');
 
@@ -22,7 +21,7 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 rollbar.critical('This is a test of a critical error')
-rollbar.warning('This is a test of a rollbar warning')
+rollbarasdasda.warning('This is a test of a rollbar warning')
 
 const port = process.env.PORT || 4555;
 

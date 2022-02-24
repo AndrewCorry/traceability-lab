@@ -32,5 +32,5 @@ app.listen(port, ()=>{
 try {
     fakeFunction()
 } catch(error){
-    console.log(error)
+    rollbar.log(error)
 }

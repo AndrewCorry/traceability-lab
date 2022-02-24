@@ -28,3 +28,9 @@ const port = process.env.PORT || 4555;
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`)
 })
+
+try {
+    fakeFunction()
+} catch(error){
+    console.log(error)
+}
